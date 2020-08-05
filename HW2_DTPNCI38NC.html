@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Assignment</title>
+</head>
+<body>
+    <h1>Click me to view date and time</h1>
+
+    <button id="buttond">Get Date & Time</button>
+    <p id="showdt"></p>
+    
+</body>
+<script>
+    const btn = document.getElementById('buttond');
+
+    btn.addEventListener('click', function(){
+        const dat = new Date();
+        document.getElementById("showdt").innerHTML = dat
+    });
+</script>
+</html>
